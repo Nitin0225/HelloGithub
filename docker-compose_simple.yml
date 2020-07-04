@@ -9,4 +9,4 @@ services:
    environment:
     HUB_HOST: selenium-hub
    ports:
-    - "0.0.0.0:32758:5900"
+    - "32758:5900"
