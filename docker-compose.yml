@@ -30,8 +30,8 @@ services:
       - node.role == worker
    networks:
     - gridDemoSwarm
-      node-chrome: 
-   image: selenium/node-chrome-debug
+  node-firefox: 
+   image: selenium/node-firefox-debug
    environment:
     HUB_HOST: selenium-hub
     HUB_PORT: 4444
