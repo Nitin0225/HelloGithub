@@ -9,4 +9,10 @@ services:
    environment:
     HUB_HOST: selenium-hub
    ports:
-    - "32758:5900"
+    - "32758-32768:5900"
+  node-firefox: 
+   image: selenium/node-firefox-debug
+   environment:
+    HUB_HOST: selenium-hub
+   ports:
+    - "32769-32779:5900"
