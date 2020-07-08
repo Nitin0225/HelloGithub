@@ -3,9 +3,9 @@ FROM openjdk:8-jdk-alpine AS JAVA_BUILD_DOCKER
 
 MAINTAINER Nitin Kumar <sun.nitin02@gmail.com>
 
-COPY grid.java /var/
+COPY /c/Users/ba35928/Documents/ADS/DataFiles/DockerDemoWithJar/src/DemoDocker/grid.java /var/
 
-COPY lib /var/lib/
+COPY /c/Users/ba35928/Documents/ADS/DataFiles/DockerDemoWithJar/src/DemoDocker/lib /var/lib/
 
 WORKDIR /var/
 
