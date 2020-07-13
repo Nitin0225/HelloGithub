@@ -3,16 +3,16 @@ kind: Role
 metadata:
   name: scale-apps
   namespace: default
-  rules:
-    - apiGroups:
-        - "apps/v1"
-      verbs:
-        - get
-        - list
-        - watch
-        - create
-        - update
-        - patch
-        - delete
-      resources:
-        - deployments
+rules:
+  - apiGroups:
+      - "apps/v1"
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    resources:
+      - deployments
