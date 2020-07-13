@@ -1,0 +1,6 @@
+curl -X PATCH https://192.168.99.100:8443/apis/apps/v1/namespaces/default/deployments/selenium-node-chrome-deployment/scale \
+--header "Authorization: Bearer $API_TOKEN" \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/strategic-merge-patch+json' \
+--insecure \
+--data '{"spec": {"replicas":  2}}'
