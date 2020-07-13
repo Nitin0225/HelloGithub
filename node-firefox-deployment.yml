@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-kompose-sample.yml
+    kompose.version: 1.21.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node-firefox
+  name: node-firefox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: node-firefox
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-kompose-sample.yml
+        kompose.version: 1.21.0 ()
+      creationTimestamp: null
+      labels:
+        io.kompose.service: node-firefox
+    spec:
+      containers:
+      - env:
+        - name: HUB_HOST
+          value: selenium-hub
+        image: selenium/node-firefox-debug
+        imagePullPolicy: IfNotPresent
+        name: node-firefox
+        ports:
+        - containerPort: 5900
