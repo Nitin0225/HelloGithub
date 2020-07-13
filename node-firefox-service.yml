@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-kompose-sample.yml
+    kompose.version: 1.21.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node-firefox
+  name: node-firefox
+spec:
+  ports:
+  - name: "5900"
+    port: 5900
+  selector:
+    io.kompose.service: node-firefox
+  type: NodePort
