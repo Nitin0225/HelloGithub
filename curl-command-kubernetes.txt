@@ -75,3 +75,18 @@ metadata:
   selfLink: /api/v1/namespaces/default/secrets/auto-scale-robot-token-bfkwl
   uid: 320cc16f-e142-4959-8c97-acfaccafa6d2
 type: kubernetes.io/service-account-token
+
+Nitins-MacBook-Air:~ nitinkumar$ kubectl describe secret auto-scale-robot-token-bfkwl
+Name:         auto-scale-robot-token-bfkwl
+Namespace:    default
+Labels:       <none>
+Annotations:  kubernetes.io/service-account.name: auto-scale-robot
+              kubernetes.io/service-account.uid: ff24fa47-a9f4-4e4e-b42c-fbe8deb79e8e
+
+Type:  kubernetes.io/service-account-token
+
+Data
+====
+ca.crt:     1066 bytes
+namespace:  7 bytes
+token:      eyJhbGciOiJSUzI1NiIsImtpZCI6InZFVkhqcXRDT0JvRDhNU2F3dHpoRmQ2N1BLeGlaaXpFTEdKR3NrZ29WOGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImF1dG8tc2NhbGUtcm9ib3QtdG9rZW4tYmZrd2wiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiYXV0by1zY2FsZS1yb2JvdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImZmMjRmYTQ3LWE5ZjQtNGU0ZS1iNDJjLWZiZThkZWI3OWU4ZSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmF1dG8tc2NhbGUtcm9ib3QifQ.UKqLceZuny4joQCgwexhN7XQdQoA0V03eMZqMJAaHWYcRZtNKfyJ7gK738punc1KVIGoO3SoLqgjRV4nAdTTnmhsbthmDC6mHZZuT8AnHwLJ3iDm9XS0xiM0U1zp15OGgoE-k7kAEo4iS4OIue1gpcHMSP3aHbpkB1ZJXyD24jrbxZYXIXLaOBRj5Vc-2p84oHOGTsGcTcQ7GFAGB-MK4mWe4pa_xjLHFPpbRxxoAwr6vxGGvSl4yuOhiVMOKm3LX24EgYN_REhPcNTVF8mYM4NrOvQCnUtjref5UKnkF1DQ7AEP_FOGiRQst42ukV-YE1T2lFoxsFR6ZBLn9-zqeA
