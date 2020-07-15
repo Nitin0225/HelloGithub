@@ -1,6 +1,20 @@
-Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/aps/v1/namespaces/default/deployments/node-chrome \
+curl -X GET https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deployments/node-chrome \
+--header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZFVkhqcXRDT0JvRDhNU2F3dHpoRmQ2N1BLeGlaaXpFTEdKR3NrZ29WOGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImF1dG8tc2NhbGUtcm9ib3QtdG9rZW4teHN0djciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiYXV0by1zY2FsZS1yb2JvdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijk2NDczNTAyLTQ1YjQtNGJhYS05NzJjLTg4MjMxNDY4YmExOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmF1dG8tc2NhbGUtcm9ib3QifQ.ek3d6FOnFWsZoXwWZbaPj4O1qVhxrW_kxWkqhMZdMN13YUJ-gNJpXUkb31VgqM0eYrqHPbCa9aqDnnHbMt6qtCrKSSJz0Tf0UhbpxQiPrqKxWiv_wqVvfG3OwodejTVS0NU6RnH7lVSrEcuGnztHp4Gd97Xkqgj0uKtWQhm4djeXNMz4rS1WJS1X0gEHv-N3-lPOeZt66JieUzpFqTuWoR4d3GyRCz092OXMB2w2sG_Y2OlIw9udmMd4GMrbTYqQskbt2o5dCtSQgGmCYMb7XQzucu6tlCElZU6XEqnWhw3pVlpygD_7QPJYZrnk_Iw7SrfQFJR0RMXgpdjBh3wrQA" \
+--header 'Accept: application/json' \
+--insecure
+
+
+curl -X PATCH https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deployments/node-chrome \
+--header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZFVkhqcXRDT0JvRDhNU2F3dHpoRmQ2N1BLeGlaaXpFTEdKR3NrZ29WOGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImF1dG8tc2NhbGUtcm9ib3QtdG9rZW4teHN0djciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiYXV0by1zY2FsZS1yb2JvdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijk2NDczNTAyLTQ1YjQtNGJhYS05NzJjLTg4MjMxNDY4YmExOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmF1dG8tc2NhbGUtcm9ib3QifQ.ek3d6FOnFWsZoXwWZbaPj4O1qVhxrW_kxWkqhMZdMN13YUJ-gNJpXUkb31VgqM0eYrqHPbCa9aqDnnHbMt6qtCrKSSJz0Tf0UhbpxQiPrqKxWiv_wqVvfG3OwodejTVS0NU6RnH7lVSrEcuGnztHp4Gd97Xkqgj0uKtWQhm4djeXNMz4rS1WJS1X0gEHv-N3-lPOeZt66JieUzpFqTuWoR4d3GyRCz092OXMB2w2sG_Y2OlIw9udmMd4GMrbTYqQskbt2o5dCtSQgGmCYMb7XQzucu6tlCElZU6XEqnWhw3pVlpygD_7QPJYZrnk_Iw7SrfQFJR0RMXgpdjBh3wrQA" \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/strategic-merge-patch+json' \
+--insecure \
+--data '{"spec": {"replicas":  2}}’
+
+
+Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deployments/node-chrome \
 > --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZFVkhqcXRDT0JvRDhNU2F3dHpoRmQ2N1BLeGlaaXpFTEdKR3NrZ29WOGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImF1dG8tc2NhbGUtcm9ib3QtdG9rZW4teHN0djciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiYXV0by1zY2FsZS1yb2JvdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijk2NDczNTAyLTQ1YjQtNGJhYS05NzJjLTg4MjMxNDY4YmExOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmF1dG8tc2NhbGUtcm9ib3QifQ.ek3d6FOnFWsZoXwWZbaPj4O1qVhxrW_kxWkqhMZdMN13YUJ-gNJpXUkb31VgqM0eYrqHPbCa9aqDnnHbMt6qtCrKSSJz0Tf0UhbpxQiPrqKxWiv_wqVvfG3OwodejTVS0NU6RnH7lVSrEcuGnztHp4Gd97Xkqgj0uKtWQhm4djeXNMz4rS1WJS1X0gEHv-N3-lPOeZt66JieUzpFqTuWoR4d3GyRCz092OXMB2w2sG_Y2OlIw9udmMd4GMrbTYqQskbt2o5dCtSQgGmCYMb7XQzucu6tlCElZU6XEqnWhw3pVlpygD_7QPJYZrnk_Iw7SrfQFJR0RMXgpdjBh3wrQA" \
-> --header 'Accept: application/json'  \
+> --header 'Accept: application/json' \
 > --insecure
 {
   "kind": "Deployment",
@@ -10,8 +24,8 @@ Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/ap
     "namespace": "default",
     "selfLink": "/apis/apps/v1/namespaces/default/deployments/node-chrome",
     "uid": "c734f7d4-9d52-4d4e-b5f5-92bb8638c102",
-    "resourceVersion": "114493",
-    "generation": 1,
+    "resourceVersion": "158431",
+    "generation": 2,
     "creationTimestamp": "2020-07-15T09:10:18Z",
     "labels": {
       "io.kompose.service": "node-chrome"
@@ -28,20 +42,28 @@ Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/ap
         "apiVersion": "apps/v1",
         "time": "2020-07-15T09:10:18Z",
         "fieldsType": "FieldsV1",
-        "fieldsV1": {"f:metadata":{"f:annotations":{".":{},"f:kompose.cmd":{},"f:kompose.version":{}},"f:labels":{".":{},"f:io.kompose.service":{}}},"f:spec":{"f:progressDeadlineSeconds":{},"f:replicas":{},"f:revisionHistoryLimit":{},"f:selector":{"f:matchLabels":{".":{},"f:io.kompose.service":{}}},"f:strategy":{"f:rollingUpdate":{".":{},"f:maxSurge":{},"f:maxUnavailable":{}},"f:type":{}},"f:template":{"f:metadata":{"f:annotations":{".":{},"f:kompose.cmd":{},"f:kompose.version":{}},"f:labels":{".":{},"f:io.kompose.service":{}}},"f:spec":{"f:containers":{"k:{\"name\":\"node-chrome\"}":{".":{},"f:env":{".":{},"k:{\"name\":\"HUB_HOST\"}":{".":{},"f:name":{},"f:value":{}}},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:ports":{".":{},"k:{\"containerPort\":5900,\"protocol\":\"TCP\"}":{".":{},"f:containerPort":{},"f:protocol":{}}},"f:resources":{},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{}}},"f:dnsPolicy":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{}}}}}
+        "fieldsV1": {"f:metadata":{"f:annotations":{".":{},"f:kompose.cmd":{},"f:kompose.version":{}},"f:labels":{".":{},"f:io.kompose.service":{}}},"f:spec":{"f:progressDeadlineSeconds":{},"f:revisionHistoryLimit":{},"f:selector":{"f:matchLabels":{".":{},"f:io.kompose.service":{}}},"f:strategy":{"f:rollingUpdate":{".":{},"f:maxSurge":{},"f:maxUnavailable":{}},"f:type":{}},"f:template":{"f:metadata":{"f:annotations":{".":{},"f:kompose.cmd":{},"f:kompose.version":{}},"f:labels":{".":{},"f:io.kompose.service":{}}},"f:spec":{"f:containers":{"k:{\"name\":\"node-chrome\"}":{".":{},"f:env":{".":{},"k:{\"name\":\"HUB_HOST\"}":{".":{},"f:name":{},"f:value":{}}},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:ports":{".":{},"k:{\"containerPort\":5900,\"protocol\":\"TCP\"}":{".":{},"f:containerPort":{},"f:protocol":{}}},"f:resources":{},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{}}},"f:dnsPolicy":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{}}}}}
+      },
+      {
+        "manager": "curl",
+        "operation": "Update",
+        "apiVersion": "apps/v1",
+        "time": "2020-07-15T15:40:01Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {"f:spec":{"f:replicas":{}}}
       },
       {
         "manager": "kube-controller-manager",
         "operation": "Update",
         "apiVersion": "apps/v1",
-        "time": "2020-07-15T09:10:20Z",
+        "time": "2020-07-15T15:40:03Z",
         "fieldsType": "FieldsV1",
         "fieldsV1": {"f:metadata":{"f:annotations":{"f:deployment.kubernetes.io/revision":{}}},"f:status":{"f:availableReplicas":{},"f:conditions":{".":{},"k:{\"type\":\"Available\"}":{".":{},"f:lastTransitionTime":{},"f:lastUpdateTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Progressing\"}":{".":{},"f:lastTransitionTime":{},"f:lastUpdateTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}}},"f:observedGeneration":{},"f:readyReplicas":{},"f:replicas":{},"f:updatedReplicas":{}}}
       }
     ]
   },
   "spec": {
-    "replicas": 1,
+    "replicas": 2,
     "selector": {
       "matchLabels": {
         "io.kompose.service": "node-chrome"
@@ -103,20 +125,12 @@ Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/ap
     "progressDeadlineSeconds": 600
   },
   "status": {
-    "observedGeneration": 1,
-    "replicas": 1,
-    "updatedReplicas": 1,
-    "readyReplicas": 1,
-    "availableReplicas": 1,
+    "observedGeneration": 2,
+    "replicas": 2,
+    "updatedReplicas": 2,
+    "readyReplicas": 2,
+    "availableReplicas": 2,
     "conditions": [
-      {
-        "type": "Available",
-        "status": "True",
-        "lastUpdateTime": "2020-07-15T09:10:20Z",
-        "lastTransitionTime": "2020-07-15T09:10:20Z",
-        "reason": "MinimumReplicasAvailable",
-        "message": "Deployment has minimum availability."
-      },
       {
         "type": "Progressing",
         "status": "True",
@@ -124,17 +138,17 @@ Nitins-MacBook-Air:~ nitinkumar$ curl -X GET https://192.168.99.102:8443/apis/ap
         "lastTransitionTime": "2020-07-15T09:10:18Z",
         "reason": "NewReplicaSetAvailable",
         "message": "ReplicaSet \"node-chrome-7698699c84\" has successfully progressed."
+      },
+      {
+        "type": "Available",
+        "status": "True",
+        "lastUpdateTime": "2020-07-15T15:40:03Z",
+        "lastTransitionTime": "2020-07-15T15:40:03Z",
+        "reason": "MinimumReplicasAvailable",
+        "message": "Deployment has minimum availability."
       }
     ]
   }
 
 
-
-
-curl -X PATCH https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deployments/node-chrome \
---header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZFVkhqcXRDT0JvRDhNU2F3dHpoRmQ2N1BLeGlaaXpFTEdKR3NrZ29WOGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImF1dG8tc2NhbGUtcm9ib3QtdG9rZW4teHN0djciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiYXV0by1zY2FsZS1yb2JvdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijk2NDczNTAyLTQ1YjQtNGJhYS05NzJjLTg4MjMxNDY4YmExOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmF1dG8tc2NhbGUtcm9ib3QifQ.ek3d6FOnFWsZoXwWZbaPj4O1qVhxrW_kxWkqhMZdMN13YUJ-gNJpXUkb31VgqM0eYrqHPbCa9aqDnnHbMt6qtCrKSSJz0Tf0UhbpxQiPrqKxWiv_wqVvfG3OwodejTVS0NU6RnH7lVSrEcuGnztHp4Gd97Xkqgj0uKtWQhm4djeXNMz4rS1WJS1X0gEHv-N3-lPOeZt66JieUzpFqTuWoR4d3GyRCz092OXMB2w2sG_Y2OlIw9udmMd4GMrbTYqQskbt2o5dCtSQgGmCYMb7XQzucu6tlCElZU6XEqnWhw3pVlpygD_7QPJYZrnk_Iw7SrfQFJR0RMXgpdjBh3wrQA" \
---header 'Accept: application/json' \
---header 'Content-Type: application/strategic-merge-patch+json' \
---insecure \
---data '{"spec": {"replicas":  2}}’
 
