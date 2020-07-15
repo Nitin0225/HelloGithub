@@ -4,15 +4,6 @@ metadata:
   name: scale-apps
   namespace: default
 rules:
-  - apiGroups:
-      - "apps/v1"
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
-    resources:
-      - deployments
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
