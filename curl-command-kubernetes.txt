@@ -37,3 +37,41 @@ curl: (6) Could not resolve host: curl
     "kind": "deployments"
   },
   "code": 403
+  
+  
+  Nitins-MacBook-Air:~ nitinkumar$ kubectl get secrets/auto-scale-robot-token-bfkwl -o yaml
+apiVersion: v1
+data:
+  ca.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwdGFXNXAKYTNWaVpVTkJNQjRYRFRJd01EY3dOREUyTURVd01Wb1hEVE13TURjd016RTJNRFV3TVZvd0ZURVRNQkVHQTFVRQpBeE1LYldsdWFXdDFZbVZEUVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUZ2CnQ1THNxM3ZhbGNpbE5mSElwaDIrTmpQNzJwTjVJMWN5KytFeUVBOUtiNlZkYm80SVVJYmlSL2UwUENtWlNlcGMKU0hwdEN5YVI3RzR0V2IvWjZjbzlzS3lHMlBZVm1WcExTNS9WUmhDV3dVbHRIdmwyRDhvdUo0c1JyZDRnZ0xXRwpEZUdhTXM2a25URHNhUTB1ODhsRGY1NEhUZHU3VE1WUXFQOUtxejkzb3JTODY1d3VCYTJLRmdyTGtiWWlibHBXCi9pRFRTYjRrVTBmZmZ5c1FjSHYrcDMwSklHeUhidjg0d01xMnFDM0xaQkxaWmJhWWtCTHBUaUhwcEQ0endsQloKSWJhNWdGOXZia0JrOE1KaTlaRWovL2grZWd6cFJ2QzJFNnJNdm1mMGJ1MUFxZGdyMTkvZnRDY3hHVm43N0Q3NgpnNWJmVGp0WXNOWnQrOFQvWlNzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWRKUVFXCk1CUUdDQ3NHQVFVRkJ3TUNCZ2dyQmdFRkJRY0RBVEFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFCYWVHaXIrdVJJNkJDNVdGblE5K09pbEV2OXRqRHdKNGlrTWNHYS9CeGRYNmk4Z1g5agpyVnpMRWE2cjdlTTIzcm1HK1Aza3EwQzJhTUhLQkh0VHo3NHR6ZVIyNzYvK2tLbmhZdXVpVklKUGY1MnQwTHZkCjRSZUJZQmNXUVNuNnR1S29XTHNpV004RXFFc0tqWlI4N1htV0FGUnlWNEZ5NWZtbVZzbnNpbm9HUXlxRkJmTDIKRCtGNXNrYjdTczBGWWoyakd1WFFtWnd5bG1EY1FMNFR6Vmk1QktHUnBmSllybXJ6MHJuUnFheFJTV213R0k1QQpad1VhaEZTcjR2Q0VZdWllOUZUNm42dFlRelBmbzArWURtVjFoZkJjRTQ3SUN2YkpOeE5uVVByczhiM0ZITk5SCkxVYWpza0dadzM5Zks4Mm11OGFTYUl5SHIwTGcvZnFyVXBFbwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+  namespace: ZGVmYXVsdA==
+  token: ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkluWkZWa2hxY1hSRFQwSnZSRGhOVTJGM2RIcG9SbVEyTjFCTGVHbGFhWHBGVEVkS1IzTnJaMjlXT0dzaWZRLmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUprWldaaGRXeDBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5elpXTnlaWFF1Ym1GdFpTSTZJbUYxZEc4dGMyTmhiR1V0Y205aWIzUXRkRzlyWlc0dFltWnJkMndpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxjblpwWTJVdFlXTmpiM1Z1ZEM1dVlXMWxJam9pWVhWMGJ5MXpZMkZzWlMxeWIySnZkQ0lzSW10MVltVnlibVYwWlhNdWFXOHZjMlZ5ZG1salpXRmpZMjkxYm5RdmMyVnlkbWxqWlMxaFkyTnZkVzUwTG5WcFpDSTZJbVptTWpSbVlUUTNMV0U1WmpRdE5HVTBaUzFpTkRKakxXWmlaVGhrWldJM09XVTRaU0lzSW5OMVlpSTZJbk41YzNSbGJUcHpaWEoyYVdObFlXTmpiM1Z1ZERwa1pXWmhkV3gwT21GMWRHOHRjMk5oYkdVdGNtOWliM1FpZlEuVUtxTGNlWnVueTRqb1FDZ3dleGhON1hRZFFvQTBWMDNlTVpxTUpBYUhXWWNSWnROS2Z5SjdnSzczOHB1bmMxS1ZJR29PM1NvTHFnalJWNG5BZFRUbm1oc2J0aG1EQzZtSFpadVQ4QW5Id0xKM2lEbTlYUzB4aU0wVTF6cDE1T0dnb0UtazdrQUVvNGlTNE9JdWUxZ3BjSE1TUDNhSGJwa0IxWkpYeUQyNGpyYnhaWVhJWExhT0JSajVWYy0ycDg0b0hPR1RzR2NUY1E3R0ZBR0ItTUs0bVdlNHBhX3hqTEhGUHBiUnh4b0F3cjZ2eEdHdlNsNHl1T2hpVk1PS20zTFgyNEVnWU5fUkVoUGNOVFZGOG1ZTTROck92UUNuVXRqcmVmNVVLbmtGMURRN0FFUF9GT0dpUlFzdDQydWtWLVlFMVQybEZveHNGUjZaQkxuOS16cWVB
+kind: Secret
+metadata:
+  annotations:
+    kubernetes.io/service-account.name: auto-scale-robot
+    kubernetes.io/service-account.uid: ff24fa47-a9f4-4e4e-b42c-fbe8deb79e8e
+  creationTimestamp: "2020-07-15T14:23:14Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:ca.crt: {}
+        f:namespace: {}
+        f:token: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubernetes.io/service-account.name: {}
+          f:kubernetes.io/service-account.uid: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2020-07-15T14:23:14Z"
+  name: auto-scale-robot-token-bfkwl
+  namespace: default
+  resourceVersion: "148343"
+  selfLink: /api/v1/namespaces/default/secrets/auto-scale-robot-token-bfkwl
+  uid: 320cc16f-e142-4959-8c97-acfaccafa6d2
+type: kubernetes.io/service-account-token
