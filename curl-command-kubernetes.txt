@@ -13,3 +13,27 @@ curl -X PATCH https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deploy
 
 http://192.168.99.102:31734/echo/anymessagehere
 /api/v1/namespaces/default/pods
+
+
+Nitins-MacBook-Air:~ nitinkumar$ curl curl -X PATCH https://192.168.99.102:8443/apis/apps/v1/namespaces/default/deployments/node-chrome/scale \
+> --header "Authorization: Bearer $API_TOKEN" \
+> --header 'Accept: application/json' \
+> --header 'Content-Type: application/strategic-merge-patch+json' \
+> --insecure \
+> --data '{"spec": {"replicas":  2}}'
+curl: (6) Could not resolve host: curl
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "deployments.apps \"node-chrome\" is forbidden: User \"system:serviceaccount:default:auto-scale-robot\" cannot patch resource \"deployments/scale\" in API group \"apps\" in the namespace \"default\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "node-chrome",
+    "group": "apps",
+    "kind": "deployments"
+  },
+  "code": 403
