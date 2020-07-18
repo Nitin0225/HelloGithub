@@ -4,6 +4,6 @@ metadata:
   name: scale-apps
   namespace: default
 rules:
-  - apiGroups: ["apps","autoscaling"]
-    resources: ["deployments","scales"]
+  - apiGroups: ["apps"]
+    resources: ["deployments","deployments/scale"]
     verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
