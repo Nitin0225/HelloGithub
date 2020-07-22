@@ -12,6 +12,7 @@ spec:
   ports:
   - name: "5900"
     port: 5900
+    nodePort: 30556
   selector:
     io.kompose.service: node-firefox
   type: NodePort
