@@ -12,7 +12,7 @@ spec:
   ports:
   - name: "4444"  
     port: 4444
-    nodePort: 4444
+    nodePort: 30444
   selector:
     io.kompose.service: selenium-hub
   type: NodePort
