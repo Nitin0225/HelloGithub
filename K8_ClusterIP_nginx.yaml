@@ -46,4 +46,4 @@ spec:
     targetPort: 80
   selector:
     io.kompose.service: nginx
-  type: LoadBalancer
+  type: ClusterIP
